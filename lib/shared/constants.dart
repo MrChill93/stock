@@ -2,15 +2,15 @@ import 'package:firebase_database/firebase_database.dart';
 
 import '../presentation/features/user/data/model/user_model.dart';
 
-class HCM23Config {
+class StockConfig {
   String? dbUrl;
   late FirebaseDatabase? database;
   FirebaseDatabase get database$ => database!;
 
-  HCM23Config._internal();
-  static HCM23Config? _instance;
-  static HCM23Config get shared {
-    _instance ??= HCM23Config._internal();
+  StockConfig._internal();
+  static StockConfig? _instance;
+  static StockConfig get shared {
+    _instance ??= StockConfig._internal();
 
     return _instance!;
   }

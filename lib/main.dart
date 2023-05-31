@@ -16,10 +16,10 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  HCM23Config.shared.database = FirebaseDatabase.instanceFor(
+  StockConfig.shared.database = FirebaseDatabase.instanceFor(
     app: app,
     databaseURL: app.options.databaseURL,
   );
 
-  runApp(const HCM23App());
+  runApp(const StockApp());
 }

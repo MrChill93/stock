@@ -13,7 +13,7 @@ class UserApi {
     void Function(UserModel user) onSuccess,
   ) async {
     try {
-      final starCountRef = HCM23Config.shared.database$.ref('users/$id');
+      final starCountRef = StockConfig.shared.database$.ref('users/$id');
       late final UserModel user;
       starCountRef.onValue.listen((DatabaseEvent event) {
         final data = event.snapshot.value;
@@ -33,7 +33,7 @@ class UserApi {
     required void Function(bool result) onSuccess,
   }) async {
     try {
-      final ref = HCM23Config.shared.database$.ref('users/$userId');
+      final ref = StockConfig.shared.database$.ref('users/$userId');
       await ref.update(userModel.toJson());
       onSuccess.call(true);
     } catch (e) {}

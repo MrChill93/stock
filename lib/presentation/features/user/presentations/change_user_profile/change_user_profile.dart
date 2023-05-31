@@ -222,7 +222,7 @@ class _ChangeUserProfilePageState extends State<ChangeUserProfilePage> {
                         final String id = UserRepoX.shared.userId$;
                         final currentUser = UserRepoX.shared.user;
                         final ref =
-                            HCM23Config.shared.database$.ref('users/$id');
+                            StockConfig.shared.database$.ref('users/$id');
                         final newUser = UserModel(
                           userName: userName.text,
                           createTime: currentUser.createTime,

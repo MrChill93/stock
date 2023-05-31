@@ -127,7 +127,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       });
                     },
                     onSuccess: (p0) async {
-                      final ref = HCM23Config.shared.database$
+                      final ref = StockConfig.shared.database$
                           .ref("users/${p0.data?.user?.uid}");
 
                       await ref.set(UserModel(

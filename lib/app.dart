@@ -8,8 +8,8 @@ import 'package:stock/presentation/features/user/presentations/change_password/c
 import 'package:stock/presentation/features/user/presentations/change_password/forcechange_password_page.dart';
 import 'package:stock/presentation/features/user/presentations/change_user_profile/change_user_profile.dart';
 
-class HCM23App extends StatelessWidget {
-  const HCM23App({super.key});
+class StockApp extends StatelessWidget {
+  const StockApp({super.key});
 
   @override
   Widget build(BuildContext context) {
